@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.marge-right-small {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+body {
+    overflow-x: hidden;
+}
+
+.background-gradient {
+    background-image: url("https://scontent.fhyd11-3.fna.fbcdn.net/v/t39.30808-6/298651562_539101321346864_4273693698921729152_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=1sNxiIXOFGMQ7kNvgFRdC9z&_nc_ht=scontent.fhyd11-3.fna&oh=00_AYADLUtHpzJ6EvN1YX-bjGlFdvKG11hidAJnwo3WTgK4HQ&oe=669B43A6");
+}
+
+
+
+text {
+    font-family: "Ultra", sans-serif;
+    width: 100%;
+    height: 100%;
+    animation: stroke 2s alternate;
+    stroke-width: 2;
+    stroke: #000000;
+    font-size: 100px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(5, 10, 14, 0);
+        stroke: rgba(0, 0, 0, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(5, 10, 14, 0);
+        stroke: rgba(0, 0, 0, 1);
+    }
+
+    80% {
+        fill: rgba(5, 10, 14, 0);
+        stroke: rgba(0, 0, 0, 1);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgba(5, 10, 14, 1);
+        stroke: rgba(0, 0, 0, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.event-hea {
+    text-align: center;
+    justify-content: center;
+
+}
+
+#nav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    border-radius: 20px;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    margin-left: 340px;
+    margin-top: 10px;
+    backdrop-filter: blur(50px);
+    padding: 0px 5px;
+    text-decoration: transparent;
+}
+
+#nav>img {
+    width: 10%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+#center-nav>a {
+    text-decoration: transparent;
+    color: #000;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.menu-item,
+.menu-open-button {
+    background: whitesmoke;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-left: -40px;
+    position: absolute;
+    color: rgb(145, 239, 4);
+    text-align: center;
+    justify-content: center;
+
+    line-height: 100px;
+
+}
+
+.menu-open {
+    display: none;
+    margin: auto;
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+
+.menu-item {
+    transition: all 0.1s ease 0s;
+}
+
+.menu-item:hover {
+    background: #EEEEEE;
+    color: #3290B1;
+}
+
+.james-container {
+    animation: 2s infinite;
+
+}
+
+
+
+.james-container:hover {
+    rotate: 10deg;
+
+}
+
+.speech-james {
+    opacity: 0;
+}
+
+.james-container .speech-james {
+    margin-right: 40px;
+}
+
+.james-container:hover .speech-james {
+    opacity: 4;
+}
+
+.john-container:hover {
+    rotate: -10deg;
+}
+
+.john-container .speech-james {
+    margin-left: 150px
+}
+
+.john-container:hover .speech-james {
+    opacity: 4;
+}
+
+.maria-container:hover {
+    rotate: -15deg;
+}
+
+.maria-container .speech-james {
+    margin-bottom: 250px;
+    margin-left: 200px
+}
+
+.ethan-container .speech-james {
+    margin-top: 90px;
+}
+
+.ethan-container:hover .speech-james {
+    opacity: 3;
+}
+
+.maria-container:hover .speech-james {
+    opacity: 4;
+    margin-left: 100px;
+}
+
+.menu-open-button {
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.ethan-container:hover {
+    rotate: 5deg;
+}
+
+.menu-open-button:hover {}
+
+.menu-open:checked+.menu-open-button {}
+
+
+
+.menu-open:checked~.menu-item:nth-child(3) {
+
+
+    transform: translate3d(1.08361px, -200.99997px, 100px);
+}
+
+.menu-open:checked~.menu-item:nth-child(4) {
+
+    -webkit-transform: translate3d(90.9466px, -52.47586px, 100px);
+    transform: translate3d(190.9466px, -100.47586px, 100px);
+}
+
+.menu-open:checked~.menu-item:nth-child(5) {
+
+    -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+    transform: translate3d(220.9466px, 100.47586px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(6) {
+
+    -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+    transform: translate3d(0.08361px, 200.99997px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(7) {
+
+    -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+    transform: translate3d(-200.86291px, 130.62064px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(8) {
+
+    -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+    transform: translate3d(-200.03006px, -100.33095px, -10px);
+}
+
+
+
+.technical-event {
+    display: none;
+}
+
+.dancing-event {
+    display: none;
+}
+
+.literature-event {
+    display: none;
+}
+
+.blue {
+    background-color: #f1863c;
+    color: white;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.blue:hover .workshops-event {
+    display: block;
+    margin-left: 500px;
+    color: #f1863c;
+    text-shadow: none;
+}
+
+.green {
+    background-color: #f4a30f;
+    color: white;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.green:hover .technical-event {
+    display: block;
+
+    margin-left: 250px;
+    color: #f4a30f;
+    text-shadow: none;
+}
+
+.workshops-event {
+    display: none;
+}
+
+
+
+.red {
+    color: white;
+    background-color: #f089a3;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+#page3 nav {
+    animation: css ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes css {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+.image-events {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+.red:hover .football-sports {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f089a3;
+    text-shadow: none;
+}
+
+.video-con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* put the video on top of the text */
+}
+
+.video-ele {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: #f3ecd2;
+    font-size: 20vw;
+    line-height: 100vh;
+    mix-blend-mode: screen;
+}
+
+.polaroid {
+    transform-origin: 50% 0;
+    transform: rotate(5deg);
+    --webkit-animation-name: animate;
+    --webkit-animation-duration: 7s;
+    --webkit-animation-iteration-count: infinite;
+    --webkit-transform-origin: 50% 0;
+    --webkit-animation-timing-function: ease-in-out;
+}
+
+.purple {
+    color: white;
+    background-color: #C49CDE;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.purple:hover .dancing-event {
+    display: inline-flex;
+    color: #C49CDE;
+    text-shadow: none;
+}
+
+.orange {
+    background-color: #debcac;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+}
+
+.orange:hover .literature-event {
+    display: block;
+    color: #debcac;
+    text-shadow: none;
+}
+
+.lightblue {
+    background-color: #62C2E4;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+}
+
+.podcasts-events {
+    display: none;
+}
+
+.lightblue:hover .podcasts-event {
+    margin-right: 500px;
+    display: block;
+    color: #62C2E4;
+    text-shadow: none;
+}
+
+.credit {
+    margin: 24px 20px 120px 0;
+    text-align: right;
+    color: #EEEEEE;
+}
+
+.football-sports {
+    display: none;
+}
+
+.credit a {
+    padding: 8px 0;
+    color: #C49CDE;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
+#page3 {
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+svg {
+    font-family: "Monoton", sans-serif;
+    width: 150%;
+    height: 150%;
+}
+
+svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365FA0;
+    font-size: 180px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgba(54, 95, 160, 1);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgba(72, 138, 204, 1);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.wrapper {
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+}
+
+;
+
+.wrist-section.dark-orange {
+    /* background-color: #f96518; */
+    background-color: none;
+
+}
+
+.wrist-section1 {
+    /* color: var(--color--primary-light); */
+    /* border-top: 1px solid #000; */
+    /* border-bottom: 1px solid #000; */
+    flex: none;
+    display: block;
+    -webkit-text-stroke: 1px #e95a0c;
+    color: transparent;
+    rotate: -0deg;
+    font-size: 40px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+}
+
+.horizontal-track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: horizontal-track 20s linear infinite;
+}
+
+.horizontal-track1 {
+
+    animation: horizontal-track1 20s linear infinite;
+}
+
+@keyframes horizontal-track {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes horizontal-track1 {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.wrist-section2 {
+    /* color: var(--color--primary-light); */
+    /* border-top: 1px solid #000; */
+    /* border-bottom: 1px solid #000; */
+    flex: none;
+    display: flex;
+    -webkit-text-stroke: 1px #e90c8d;
+    font-size: 40px;
+    color: transparent;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    margin: 30px;
+
+}
+
+.inline {
+    display: inline;
+}
+
+.aspect-video {
+    aspect-ratio: 16/9;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.styles_gear1__5ut8U {
+    animation: styles_rotateclock__00_La 9s linear infinite;
+}
+
+@keyframes styles_rotateclock_00_La {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
+}
+
+footer {
+    background-color: #ecac0b;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 1px;
+
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.polaroid:hover {
+    animation: scrol 3s infinite;
+}
+
+@keyframes scrol {
+    from {
+        rotate: 10deg;
+    }
+
+    to {
+        rotate: -10deg;
+    }
+}
+
+.speech-james1 {
+    opacity: 0;
+}
+
+
+.john-container:hover .speech-james1 {
+    opacity: 1;
+}

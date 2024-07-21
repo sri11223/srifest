@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f3ecd2;
+            font-family: 'Nunito', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container-fluid {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 5% 7%;
+            margin: 2% auto;
+            max-width: 800px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container-fluid::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        h1 {
+            margin-bottom: 3%;
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .bus-animation {
+            position: relative;
+            display: inline-block;
+        }
+
+        .bus-animation i {
+            font-size: 2rem;
+            color: #333;
+            animation: drive 5s linear infinite;
+        }
+
+        @keyframes drive {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .list-unstyled li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .list-unstyled i {
+            margin-right: 10px;
+            color: #FFD43B;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .text-success {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mt-4 {
+            margin-top: 2rem;
+        }
+
+        /* Background animation */
+        .bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)) 0 0;
+            background-size: 50px 50px;
+            opacity: 0.1;
+            z-index: 0;
+            animation: animateBackground 30s linear infinite;
+        }
+
+        @keyframes animateBackground {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 100px 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+    <div id="transportation" class="container-fluid">
+        <h1 class="text-center">
+            Transportation
+            <span class="bus-animation">
+                <i class="fas fa-bus"></i>
+            </span>
+        </h1>
+
+        <ul class="list-unstyled">
+            <li><i class="fas fa-star"></i> Available from Guntur &amp; Chilakaluripeta</li>
+            <li><i class="fas fa-star"></i> Available at 7:00 AM &amp; 9:00 AM</li>
+        </ul>
+
+        <div class="mt-4">
+            <h5 class="text-success">Staff Coordinators</h5>
+            <p>Dr. K. PraveenKumar, Associate Professor<br>Phone: 9849652027</p>
+            <p>Dr. Md. Hashher Sk., Associate Professor<br>Phone: 96421 35090</p>
+            <p>Sri. N. Dharani Kumar, Associate Professor<br>Phone: 9618923836</p>
+        </div>
+
+        <a href="https://rvrjcce.ac.in/colorido2k24/documents/routes.pdf" target="_blank" class="btn btn-primary">Route
+            Info</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f3ecd2;
+            /* Light beige background */
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e3c5a1, #d4bfa6);
+            /* Beige and light brown tones */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bus-animation {
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #fff;
+            animation: drive 10s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes drive {
+            0% {
+                transform: translateX(-100%) translateY(-50%);
+            }
+
+            100% {
+                transform: translateX(100%) translateY(-50%);
+            }
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1,
+        h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+            /* Light brown for headings */
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #d4bfa6;
+            /* Match with header background */
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #bca08d;
+            /* Darker shade */
+            transform: scale(1.05);
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-container img {
+            width: calc(33% - 20px);
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+        #register form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #register label {
+            margin-bottom: 10px;
+        }
+
+        #register input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #register input[type="submit"] {
+            background-color: #d4bfa6;
+            /* Match with header */
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #register input[type="submit"]:hover {
+            background-color: #bca08d;
+            /* Darker shade */
+        }
+
+        footer {
+            background: linear-gradient(135deg, #e3c5a1, #d4bfa6);
+            /* Match header */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            clear: both;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container img {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container img {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bus-animation">
+            <i class="fas fa-bus"></i>
+        </div>
+        <h1>Hospitality of ℝ𝕧𝕣𝕛𝕔 ℂ𝕠𝕝𝕝𝕖𝕘𝕖 𝕠𝕗 𝔼𝕟𝕘𝕚𝕟𝕖𝕖Ring</h1>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Hospitality</h1>
+            <p>Experience the best Hospitality in our college</p>
+            <button><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSccSdAq8z0qDdNW_Hl8f0LD-7qTVLJ6GAVPNKKQJmLTtTnYBA/closedform">Book
+                    Now</a></button>
+        </section>
+
+        <section id="accommodation">
+            <h1>Accommodation Details</h1>
+            <div>
+                <h2>For Girls</h2>
+                <p>Girls hostel of college</p>
+                <p>Dr. N.C. Kotaiah, Professor in EEE<br>
+                    Convener, Girls Hostel<br>
+                    Phone: 9490776067</p>
+            </div>
+            <div>
+                <h2>For Boys</h2>
+                <p>Boys hostel of college</p>
+                <p>Dr. B. Vara Prasada Rao, Professor in CSE<br>
+                    Convener, Boys Hostel<br>
+                    Phone: 9849717299</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="gallery-container">
+                <img src="https://content.jdmagicbox.com/comp/hyderabad/i5/040pxx40.xx40.180221175051.h7i5/catalogue/krithika-boys-hostel-kerala-food-available-dilsukhnagar-hyderabad-hostels-for-men-1uqsz69ded.jpg?w=1920&q=75"
+                    alt="Boys Hostel">
+                <img src="https://via.placeholder.com/600x400" alt="Gallery Image 2">
+                <img src="https://via.placeholder.com/600x400" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section id="register">
+            <h1>Register</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Hospitality. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
